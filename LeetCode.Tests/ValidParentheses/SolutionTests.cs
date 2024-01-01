@@ -11,7 +11,7 @@ namespace LeetCode.Tests.ValidParentheses
         [InlineData("()[]{}", true)]
         [InlineData("(]", false)]
         [InlineData("]", false)]
-        public void Tests(string input, bool expected)
+        public void Test(string input, bool expected)
         {
             _solution.IsValid(input).Should().Be(expected);
         }
