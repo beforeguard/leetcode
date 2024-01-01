@@ -23,9 +23,9 @@ namespace LeetCode.Tests.MergeTwoSortedLists
         {
             ListNode listNode = null;
 
-            foreach (int number in numbers)
+            for (var i = numbers.Length - 1; i >= 0; i--)
             {
-                listNode = new ListNode(number, listNode);
+                listNode = new ListNode(numbers[i], listNode);
             }
 
             return listNode;
