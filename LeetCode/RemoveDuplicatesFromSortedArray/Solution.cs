@@ -1,6 +1,10 @@
 ﻿namespace LeetCode.RemoveDuplicatesFromSortedArray
 {
-    internal class Solution
+    public class Solution
     {
+        public int RemoveDuplicates(int[] nums)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
