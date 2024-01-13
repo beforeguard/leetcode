@@ -7,6 +7,11 @@ namespace LeetCode.Tests.LengthOfLastWord
         private readonly Solution _solution = new Solution();
 
         [Theory]
+        [InlineData(" ", 0)]
+        [InlineData("a", 1)]
+        [InlineData("a ", 1)]
+        [InlineData(" a", 1)]
+        [InlineData("day", 3)]
         [InlineData("Hello World", 5)]
         [InlineData("   fly me   to   the moon  ", 4)]
         [InlineData("luffy is still joyboy", 6)]

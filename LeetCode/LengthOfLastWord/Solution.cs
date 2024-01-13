@@ -4,7 +4,19 @@
     {
         public int LengthOfLastWord(string s)
         {
-            throw new NotImplementedException();
+            var lastIndex = s.Length - 1;
+            while (lastIndex >= 0 && s[lastIndex] == ' ')
+            {
+                lastIndex--;
+            }
+
+            var firstIndex = lastIndex;
+            while (firstIndex >= 0 && s[firstIndex] != ' ')
+            {
+                firstIndex--;
+            }
+
+            return lastIndex - firstIndex;
         }
     }
 }
