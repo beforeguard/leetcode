@@ -35,7 +35,7 @@ namespace LeetCode.Tests.MergeTwoSortedLists
         {
             if (listNode == null)
             {
-                return new int[0];
+                return [];
             }
 
             var list = new List<int>();
