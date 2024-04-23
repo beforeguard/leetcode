@@ -13,5 +13,14 @@
 
             return listNode;
         }
+
+        internal static TreeNode ToBinaryTree(this int?[] numbers)
+        {
+            TreeNode treeNode = null;
+
+            // TODO: Add implementation.
+
+            return treeNode;
+        }
     }
 }
