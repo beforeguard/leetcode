@@ -1,6 +1,4 @@
-﻿using System.Text;
-
-namespace LeetCode.AddTwoNumbers
+﻿namespace LeetCode._2_AddTwoNumbers
 {
     public class Solution
     {
