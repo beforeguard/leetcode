@@ -1,4 +1,4 @@
-﻿namespace LeetCode.LengthOfLongestSubstring
+﻿namespace LeetCode._3_LengthOfLongestSubstring
 {
     public class Solution
     {

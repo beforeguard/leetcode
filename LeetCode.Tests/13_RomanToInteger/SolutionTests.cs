@@ -1,6 +1,6 @@
-﻿using LeetCode.RomanToInteger;
+﻿using LeetCode._13_RomanToInteger;
 
-namespace LeetCode.Tests.RomanToInteger
+namespace LeetCode.Tests._13_RomanToInteger
 {
     public class SolutionTests
     {

@@ -1,4 +1,4 @@
-﻿using LeetCode.AddTwoNumbers;
+﻿using LeetCode._2_AddTwoNumbers;
 
 namespace LeetCode.Tests.AddTwoNumbers
 {

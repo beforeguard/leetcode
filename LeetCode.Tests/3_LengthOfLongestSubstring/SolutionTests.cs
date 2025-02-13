@@ -1,4 +1,4 @@
-﻿using LeetCode.LengthOfLongestSubstring;
+﻿using LeetCode._3_LengthOfLongestSubstring;
 
 namespace LeetCode.Tests.LengthOfLongestSubstring
 {
