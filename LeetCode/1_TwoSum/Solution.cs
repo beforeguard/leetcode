@@ -1,4 +1,4 @@
-﻿namespace LeetCode.TwoSum
+﻿namespace LeetCode._1_TwoSum
 {
     public class Solution
     {

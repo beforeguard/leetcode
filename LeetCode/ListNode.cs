@@ -1,4 +1,4 @@
-﻿namespace LeetCode.MergeTwoSortedLists
+﻿namespace LeetCode
 {
     public class ListNode
     {
