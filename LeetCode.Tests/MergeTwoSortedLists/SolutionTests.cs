@@ -13,40 +13,10 @@ namespace LeetCode.Tests.MergeTwoSortedLists
         public void Test(int[] numbers1, int[] numbers2, int[] expected)
         {
             var mergedList = _solution.MergeTwoLists(
-                ArrayToLinkedList(numbers1),
-                ArrayToLinkedList(numbers2));
+                numbers1.ToLinkedList(),
+                numbers2.ToLinkedList());
 
-            LinkedListToArray(mergedList).Should().BeEquivalentTo(expected);
-        }
-
-        internal ListNode ArrayToLinkedList(int[] numbers)
-        {
-            ListNode listNode = null;
-
-            for (var i = numbers.Length - 1; i >= 0; i--)
-            {
-                listNode = new ListNode(numbers[i], listNode);
-            }
-
-            return listNode;
-        }
-
-        internal int[] LinkedListToArray(ListNode listNode)
-        {
-            if (listNode == null)
-            {
-                return new int[0];
-            }
-
-            var list = new List<int>();
-
-            while (listNode != null)
-            {
-                list.Add(listNode.val);
-                listNode = listNode.next;
-            }
-
-            return list.ToArray();
+            mergedList.ToArray().Should().BeEquivalentTo(expected);
         }
     }
 }

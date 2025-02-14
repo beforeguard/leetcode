@@ -1,6 +1,6 @@
-﻿using LeetCode.PalindromeNumber;
+﻿using LeetCode._9_PalindromeNumber;
 
-namespace LeetCode.Tests.PalindromeNumber
+namespace LeetCode.Tests._9_PalindromeNumber
 {
     public class SolutionTests
     {
