@@ -1,6 +1,6 @@
-﻿using LeetCode.SearchInsertPosition;
+﻿using LeetCode._35_SearchInsertPosition;
 
-namespace LeetCode.Tests.SearchInsertPosition
+namespace LeetCode.Tests._35_SearchInsertPosition
 {
     public class SolutionTests
     {
