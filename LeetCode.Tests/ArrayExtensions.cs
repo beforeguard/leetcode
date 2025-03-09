@@ -1,16 +1,25 @@
-﻿using System.Linq;
-
-namespace LeetCode.Tests
+﻿namespace LeetCode.Tests
 {
     internal static class ArrayExtensions
     {
-        internal static ListNode ToLinkedList(this int[] numbers)
+        internal static ListNode ToLinkedList(this int[] numbers, int cycleIndex = -1)
         {
             ListNode head = null;
+            ListNode tail = null;
 
             for (var i = numbers.Length - 1; i >= 0; i--)
             {
                 head = new ListNode(numbers[i], head);
+
+                if (tail == null)
+                {
+                    tail = head;
+                }
+
+                if (i == cycleIndex)
+                {
+                    tail.next = head;
+                }
             }
 
             return head;
