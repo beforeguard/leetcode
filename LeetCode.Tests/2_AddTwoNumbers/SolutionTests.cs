@@ -1,6 +1,6 @@
 ﻿using LeetCode._2_AddTwoNumbers;
 
-namespace LeetCode.Tests.AddTwoNumbers
+namespace LeetCode.Tests._2_AddTwoNumbers
 {
     public class SolutionTests
     {
