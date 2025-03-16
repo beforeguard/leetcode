@@ -1,6 +1,6 @@
 ﻿using LeetCode._3_LengthOfLongestSubstring;
 
-namespace LeetCode.Tests.LengthOfLongestSubstring
+namespace LeetCode.Tests._3_LengthOfLongestSubstring
 {
     public class SolutionTests
     {
