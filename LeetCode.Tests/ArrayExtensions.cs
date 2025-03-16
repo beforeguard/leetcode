@@ -1,4 +1,6 @@
-﻿namespace LeetCode.Tests
+﻿using System.Runtime.CompilerServices;
+
+namespace LeetCode.Tests
 {
     internal static class ArrayExtensions
     {
@@ -23,6 +25,31 @@
             }
 
             return head;
+        }
+
+        internal static (ListNode headA, ListNode headB) ToIntersectingLinkedList(this int[] numbersA, int[] numbersB, int intersectVal, int skipA, int skipB)
+        {
+            ListNode tail = null;
+            for (var i = numbersA.Length - 1; i > skipA; i--)
+            {
+                tail = new ListNode(numbersA[i], tail);
+            }
+
+            var intersectNode = new ListNode(intersectVal, tail);
+
+            ListNode tailA = null;
+            for (var i = skipA - 1; i >= 0; i--)
+            {
+                tailA = new ListNode(numbersA[i], tailA == null ? intersectNode : tailA);
+            }
+
+            ListNode tailB = null;
+            for (var i = skipB - 1; i >= 0; i--)
+            {
+                tailB = new ListNode(numbersB[i], tailB == null ? intersectNode : tailB);
+            }
+
+            return new(tailA, tailB);
         }
 
         internal static TreeNode ToBinaryTree(this int?[] numbers)
